@@ -112,7 +112,9 @@ nav ul li a:hover {
     font-weight: bold;
     fill: var(--color-text);
     text-anchor: middle;
-    pointer-events: none; /* Allows click to pass through to the SVG path */
+    /* NEW LINE: Helps vertically center text in SVG circles */
+    dominant-baseline: middle; 
+    pointer-events: none; 
 }
 
 /* --- Resource Card Grid Styles --- */
