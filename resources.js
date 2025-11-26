@@ -1,7 +1,7 @@
 // resources.js
 
 // FIX 1: Changed array name from 'resources' to 'resourcesData'
-const resourcesData = [
+var resourcesData = [
     {
         // FIX 2: Changed 'name' to 'title'
         title: "Mann Mukti",
