@@ -1,74 +1,83 @@
+That's great\! Embedding that specific Google Form is a quick and straightforward process using the `<iframe>` tag.
+
+Here is the updated code for your **`index.html`** file, with your provided iframe embedded into the "Suggest a Resource" section. I have adjusted the `width` of the iframe to **`100%`** for better mobile responsiveness and increased the `height` to **`1000px`** to ensure the form is usable without excessive scrolling within the embedded box.
+
+## 💻 Updated `index.html` with Embedded Form
+
+**Replace the entire content of your current `index.html` file with the code below.**
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holistic South Asian Well-Being Navigator</title>
-    <link rel="stylesheet" href="shared.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holistic Well-Being Navigator</title>
+    <link rel="stylesheet" href="shared.css">
 </head>
 <body>
-    <header>
-        <h1>Holistic South Asian Well-Being Navigator</h1>
-        <nav>
+    <header>
+        <h1>Holistic South Asian Well-Being Navigator</h1>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="idioms.html">Talking about your experience</a></li>
                 <li><a href="references.html">References</a></li>
             </ul>
         </nav>
-    </header>
+    </header>
 
-    <main>
-        <section id="holistic-navigator">
-            <h2>The Seven Dimensions of the Whole Self</h2>
-            <p>Our well-being is holistic and interconnected. Explore resources dedicated to each dimension of health, grounded in cultural and community context, by clicking on a card below.</p>
+    <main>
+        <h2>Navigate Your Well-Being Journey</h2>
+        <p>Select a dimension of well-being below to find resources specifically curated for the South Asian community and diaspora, with a focus on cultural competence and holistic health.</p>
+
+        <div class="dimension-grid">
+            <a href="mind.html" class="dimension-card">
+                <h3>Mind</h3>
+                <p>Emotional & Cognitive Health, Mental Illness, Therapy, Stress</p>
+            </a>
+            <a href="body.html" class="dimension-card">
+                <h3>Body</h3>
+                <p>Physical Health, Nutrition, Somatic Practice, Ayurveda</p>
+            </a>
+            <a href="soul.html" class="dimension-card">
+                <h3>Soul</h3>
+                <p>Spiritual Connection, Meaning-making, Faith-based Guidance</p>
+            </a>
+            <a href="family.html" class="dimension-card">
+                <h3>Family</h3>
+                <p>Intergenerational Gaps, Conflict Resolution, Kinship Support</p>
+            </a>
+            <a href="community.html" class="dimension-card">
+                <h3>Community</h3>
+                <p>Social Support, Affinity Groups, Civic Engagement, Seva</p>
+            </a>
+            <a href="workstudy.html" class="dimension-card">
+                <h3>Work/Study</h3>
+                <p>Academic Pressure, Career Burnout, Professional Networking, Finance</p>
+            </a>
+            <a href="identityculture.html" class="dimension-card">
+                <h3>Identity & Culture</h3>
+                <p>Belonging, Diaspora Experience, LGBTQ+ Identity, Caste Equity</p>
+            </a>
+        </div>
+
+        <section class="community-listening-form">
+            <hr>
+            <h3>Suggest a Resource for the Community! 👂</h3>
+            <p>Help us grow this navigator by submitting new resources, organizations, or cultural practices that have supported your well-being. Your input directly helps the South Asian community.</p>
             
-            <div class="dimension-grid">
-                
-                <a href="body.html" class="dimension-card">
-                    <h3>1. Body</h3>
-                    <p>Physical health, somatic connection, traditional practices (Ayurveda, Yoga, etc.).</p>
-                </a>
-                
-                <a href="mind.html" class="dimension-card">
-                    <h3>2. Mind</h3>
-                    <p>Emotional, cognitive, and professional mental health support, anti-stigma resources.</p>
-                </a>
-                
-                <a href="soul.html" class="dimension-card">
-                    <h3>3. Soul</h3>
-                    <p>Spiritual grounding, existential purpose, faith-based guidance, meditation, and meaning-making.</p>
-                </a>
-
-                <a href="family.html" class="dimension-card">
-                    <h3>4. Family</h3>
-                    <p>Intergenerational dynamics, conflict mediation, kinship support, and family acceptance.</p>
-                </a>
-                
-                <a href="community.html" class="dimension-card">
-                    <h3>5. Community</h3>
-                    <p>Social networks, civic engagement, 'seva' (selfless service), and reducing social isolation.</p>
-                </a>
-                
-                <a href="workstudy.html" class="dimension-card">
-                    <h3>6. Work/Study</h3>
-                    <p>Academic pressure, career burnout, professional networking, and financial stress resources.</p>
-                </a>
-
-                <a href="identityculture.html" class="dimension-card">
-                    <h3>7. Identity & Culture</h3>
-                    <p>Diaspora identity, caste equity, LGBTQ+ support, and cultural affirmation/belonging.</p>
-                </a>
-                
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPtHVjovUmxKuhC-HjuzGOoe4bozpipSqx3xw_mSdNhZaT_Q/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-            
-            <p style="margin-top: 30px;">This navigator recognizes that well-being is not just the absence of illness, but a balanced state across all areas of life, deeply influenced by cultural context.</p>
-
+            <hr>
         </section>
-    </main>
+        
+    </main>
 
-    <footer>
-        <p>&copy; 2024 Holistic South Asian Well-Being Navigator. Culturally Grounded Wellness.</p>
-    </footer>
+    <footer>
+        <p>&copy; 2024 Holistic South Asian Well-Being Navigator. Culturally Grounded Wellness.</p>
+    </footer>
 </body>
 </html>
+```
